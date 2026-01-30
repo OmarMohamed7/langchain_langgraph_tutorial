@@ -3,3 +3,11 @@ langchain_google_genai
 python-dotenv
 langchain_core
 pydantic
+pypdf
+langchain-text-splitters
+
+# Free LLM Options (choose one or more)
+langchain-ollama          # For Ollama (100% free, local)
+# langchain-groq            # For Groq (free tier, very fast)
+# langchain-huggingface     # For Hugging Face (free models)
+# transformers              # Required for Hugging Face
