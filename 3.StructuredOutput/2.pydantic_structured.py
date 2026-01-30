@@ -30,7 +30,7 @@ Now, GPU performance is only one part of the power picture, and the Pixel 10 Pro
 But such a low GPU score means the Google Pixel 10 Pro might still struggle with demanding games.
 
 Google claims the Pixel 10 series will feel faster in everday use, and perform better for AI tasks, and that’s probably true, so if you don’t care about games then this shouldn’t affect you much. But if you’re a big mobile gamer then you might want to think twice about buying the Pixel 10 Pro – or any Pixel 10 model, as they all use the same Tensor G5 chipset, so will probably all have similar GPU performance.
-
+ 
 That said, while this looks like a legitimate Geekbench screenshot, it’s still just one result, so it’s possible this will turn out to be an outlier. It’s also feasible that Google might be able to improve the Pixel 10 Pro’s GPU performance through a software update.
                                 
 Reviewer: John Doe                               """
