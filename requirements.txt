@@ -5,6 +5,8 @@ langchain_core
 pydantic
 pypdf
 langchain-text-splitters
+langchain_huggingface
+sentence-transformers
 
 # Free LLM Options (choose one or more)
 langchain-ollama          # For Ollama (100% free, local)
