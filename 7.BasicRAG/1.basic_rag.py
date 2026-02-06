@@ -40,17 +40,22 @@ If you can't find an answer, say "I don't know."
 """
 )
 
-# TODO: Enhance these and understand what is going and why there is two chains one for documents and one for retrieval
+# Step7: Create the two chains
+#
+# Why two chains?
+# 1. document_chain: Takes {context, input} → generates answer using LLM
+# 2. retrieval_chain: Takes {input} → finds relevant docs → passes to document_chain → returns answer
+#
+# Flow: Question → retrieval_chain → retriever finds docs → document_chain → LLM → Answer
 
-# Step7: Create the document chain
 document_chain = create_stuff_documents_chain(model, prompt)
 retrieval_chain = create_retrieval_chain(retriever, document_chain)
 
 
 # Step8: Query the chain
 query = (
-    "what are the key takeways from the document?"  # Replace with your actual question
+    "what are the key takeaways from the document?"  # Replace with your actual question
 )
-response = retrieval_chain.invoke({"input": query, "context": retriever})
+response = retrieval_chain.invoke({"input": query})
 
 print(response)
