@@ -1,3 +1,4 @@
+langchain-classic
 langchain_community
 langchain_google_genai
 python-dotenv
@@ -7,6 +8,7 @@ pypdf
 langchain-text-splitters
 langchain_huggingface
 sentence-transformers
+faiss-cpu
 
 # Free LLM Options (choose one or more)
 langchain-ollama          # For Ollama (100% free, local)
