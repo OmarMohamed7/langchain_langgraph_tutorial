@@ -12,6 +12,8 @@ faiss-cpu
 
 # Free LLM Options (choose one or more)
 langchain-ollama          # For Ollama (100% free, local)
+chromadb
+langchain_chroma
 # langchain-groq            # For Groq (free tier, very fast)
 # langchain-huggingface     # For Hugging Face (free models)
 # transformers              # Required for Hugging Face
