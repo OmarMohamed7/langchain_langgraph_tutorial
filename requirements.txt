@@ -15,6 +15,7 @@ langchain-ollama          # For Ollama (100% free, local)
 chromadb
 langchain_chroma
 wikipedia
+youtube_transcript_api
 # langchain-groq            # For Groq (free tier, very fast)
 # langchain-huggingface     # For Hugging Face (free models)
 # transformers              # Required for Hugging Face
