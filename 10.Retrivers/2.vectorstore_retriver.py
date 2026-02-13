@@ -34,6 +34,28 @@ docs = [
 
 vectorstore = Chroma.from_documents(docs, embeddings)
 
+# There are MMR (maximum marginal relevance) retrievers that are more advanced than the basic retrievers and more accurate than similarity search.
+# The issue with simliratiy is redudancy of the results.
+# Use Similarity Search when:
+#
+# You want the single best fact
+#
+# Short answers
+#
+# Q&A with clear, specific queries
+#
+# Classification or tagging
+#
+# Use MMR when:
+#
+# You want good explanations
+#
+# Multi-paragraph answers
+#
+# RAG chatbots
+#
+# Reports, summaries, “tell me about…”
+#
 retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
 query = "what is the embedding do ?"
