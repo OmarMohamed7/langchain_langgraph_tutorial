@@ -36,7 +36,7 @@ ai_msg = llm_with_tools.invoke(messages)
 
 messages.append(ai_msg)
 
-print(ai_msg)
+# While the model returned tool calls and no final text → execute tools.
 while ai_msg.content == "" and ai_msg.tool_calls:
     tool_messages = []
 
@@ -56,10 +56,13 @@ while ai_msg.content == "" and ai_msg.tool_calls:
             conversion_rate = rate
 
         elif tool_name == "convert":
+            # Here is where InjectedToolArg logic appears:
+            # Since the model does NOT see conversion_rate, it won’t include it.
             if "conversion_rate" not in tool_args:
                 if "conversion_rate" not in locals() or conversion_rate is None:
                     raise ValueError("Conversion rate is required")
                 else:
+                    # Inject it manually:
                     tool_args["conversion_rate"] = conversion_rate
 
             result = convert.invoke(tool_args)
