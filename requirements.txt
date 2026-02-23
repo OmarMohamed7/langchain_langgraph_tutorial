@@ -19,3 +19,5 @@ youtube_transcript_api
 # langchain-groq            # For Groq (free tier, very fast)
 # langchain-huggingface     # For Hugging Face (free models)
 # transformers              # Required for Hugging Face
+
+langgraph
